@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #0b0d10;
+  color: #ffffff;
+}
+
+/* SCALE WRAPPER */
+.page-scale {
+  height: 100%;
+  width: 100%;
+}
+
+/* HERO */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1508610048659-a06b669e3321");
+  background-size: cover;
+  background-position: center;
+  display: block; /* IMPORTANT: no vertical centering */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+}
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 22px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* TRUST BADGE — CENTERED */
+.trust-badge {
+  margin: 0 auto 6px auto; /* center horizontally */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 18px;
+  font-size: 13px;
+  border-radius: 11px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.flag-icon {
+  width: 24px;
+  height: 14px;
+}
+
+/* HEADLINE */
+.survival {
+  font-size: 40px;
+  line-height: 1.05;
+  color: #ffd700;
+}
+
+.subheadline {
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* DESCRIPTION */
+.description-line {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #e6e6e6;
+}
+
+/* BONUS */
+.bonus-box {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.bonus-box h3 {
+  font-size: 20px;
+  margin-bottom: 12px; /* space below "2 Free Survival Gifts" */
+  color: #ffd700;
+}
+
+
+.gift-item {
+  margin-bottom: 12px; /* vertical spacing between gift blocks */
+}
+
+
+.gift-item h4 {
+  font-size: 16px;
+  color: #f4c430;
+}
+
+.gift-item p {
+  font-size: 14px;
+}
+
+.highlight-value {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #ffd700;
+  color: #0b0d10;
+}
+
+/* CTA */
+.cta-button {
+  margin-top: 8px;
+  padding: 14px 34px;
+  border-radius: 36px;
+  background: #c81d25;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* FOOTNOTE */
+.footnote {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: italic;
+  color: #ffffff;
+}
+
+/* MOBILE — SCALE + LIFT CONTENT (KEY FIX) */
+@media (max-width: 768px) {
+  .page-scale {
+    transform: scale(0.88) translateY(-12px);
+    transform-origin: top center;
+  }
+
+  .survival {
+    font-size: 34px;
+  }
+}
