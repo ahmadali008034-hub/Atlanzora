@@ -60,15 +60,13 @@ body{
   border-radius:8px;
 }
 
-/* ===== FREE GIFTS ===== */
-
+/* BONUS */
 .bonus-section{
   margin:8px 0;
   padding:7px;
   background:#111;
   border-radius:10px;
   border:1px solid #222;
-  margin-top: 8px;
 }
 
 .bonus-heading{
@@ -110,9 +108,6 @@ body{
 .bonus-value{
   margin-top:10px;
   font-size:13px;
-}
-
-.bonus-value{
   color:#ffd000;
   font-weight:bold;
 }
@@ -130,6 +125,30 @@ body{
 }
 
 .btn-primary:hover{
+  background:#ffe14d;
+}
+
+/* FLOAT BUTTON */
+#scrollBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:50px;
+  height:50px;
+  background:#ffd000;
+  color:#000;
+  border:none;
+  border-radius:50%;
+  font-size:20px;
+  cursor:pointer;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.5);
+  z-index:999;
+}
+
+#scrollBtn:hover{
   background:#ffe14d;
 }
 
