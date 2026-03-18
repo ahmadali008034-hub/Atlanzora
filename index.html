@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -36,23 +35,19 @@
     </h2>
 
     <div class="smart-image">
-      <img src="unnamed.jpg" alt="Emergency Home Defense System">
+      <img src="image/unnamed.jpg" alt="Emergency Home Defense System">
     </div>
 
     <p class="section-text">
      A must-have <strong><em>Anti looter kit</em></strong> for every family to protect their loved ones with early warning alerts, motion detection, and instant threat awareness — when seconds matter most.
     </p>
 
-    <!-- ===== SHORT FREE GIFTS SECTION ===== -->
+    <!-- BONUS -->
     <div class="bonus-section">
 
-      <h3 class="bonus-heading">
-        🎁 2 FREE Gifts Today
-      </h3>
+      <h3 class="bonus-heading">🎁 2 FREE Gifts Today</h3>
 
-      <p class="bonus-subtext">
-        Limited to first 250 orders
-      </p>
+      <p class="bonus-subtext">Limited to first 250 orders</p>
 
       <div class="bonus-box">
 
@@ -68,14 +63,12 @@
 
       </div>
 
-      <p class="bonus-value">
-        $64 Gifts Value — FREE
-      </p>
+      <p class="bonus-value">$64 Gifts Value — FREE</p>
 
     </div>
 
-    <!-- CTA BUTTON -->
-    <a class="btn-primary"
+    <!-- CTA BUTTON (TARGET) -->
+    <a id="cta-button" class="btn-primary"
     href="https://www.theantilooterkit.com/main/#aff=AFFILIATE&cam=CAMPAIGNKEY">
       Watch Free Presentation
     </a>
@@ -83,6 +76,33 @@
   </div>
 
 </section>
+
+<!-- FLOATING SCROLL BUTTON -->
+<button id="scrollBtn">⬇</button>
+
+<!-- JAVASCRIPT -->
+<script>
+const scrollBtn = document.getElementById("scrollBtn");
+const target = document.getElementById("cta-button");
+
+// Check if page has scroll
+function checkScroll() {
+  if (document.body.scrollHeight > window.innerHeight) {
+    scrollBtn.style.display = "flex";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+// Scroll to CTA
+scrollBtn.addEventListener("click", () => {
+  target.scrollIntoView({ behavior: "smooth" });
+});
+
+// Run on load + resize
+window.addEventListener("load", checkScroll);
+window.addEventListener("resize", checkScroll);
+</script>
 
 </body>
 </html>
